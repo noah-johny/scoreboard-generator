@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+
+    <script src="index.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h1 id="title">ScoreBOARD</h1>
+    <div class="score-wrapper">
+      <div class="score-column">
+        <h3 class="name">PLAYER 1</h3>
+
+        <div class="score">
+          <h1 id="score-el-1" class="score-value">0</h1>
+        </div>
+
+        <div class="add-points">
+          <button class="add-point-btn" onclick="add_points(1)">1+</button>
+          <button class="add-point-btn" onclick="add_points(2)">2+</button>
+          <button class="add-point-btn" onclick="add_points(3)">3+</button>
+        </div>
+      </div>
+
+      <div class="action-wrapper">
+        <button id="reset-btn" onclick="reset(0)">RESET</button>
+
+        <div class="actions">
+          <button id="undo-btn" class="action-btn" onclick="undo()">
+            <img id="undo-img" class="action-img" src="assets/redo.png" />
+          </button>
+
+          <button id="redo-btn" class="action-btn" onclick="redo()">
+            <img id="redo-img" class="action-img" src="assets/redo.png" />
+          </button>
+        </div>
+      </div>
+
+      <div class="score-column">
+        <h3 class="name">PLAYER 2</h3>
+
+        <div class="score">
+          <h1 id="score-el-2" class="score-value">0</h1>
+        </div>
+
+        <div class="add-points">
+          <button class="add-point-btn" onclick="add_points(4)">1+</button>
+          <button class="add-point-btn" onclick="add_points(5)">2+</button>
+          <button class="add-point-btn" onclick="add_points(6)">3+</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

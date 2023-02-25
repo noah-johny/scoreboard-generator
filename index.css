@@ -1,0 +1,170 @@
+@font-face {
+  font-family: "Digital";
+  src: url("assets/digital.ttf") format("truetype");
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  background-image: url("assets/arcade.jpg");
+  background-size: cover;
+  color: #eeeeee;
+}
+
+#title {
+  font-family: "Poppins", sans-serif;
+  font-size: max(5vw, 36px);
+  text-align: center;
+  text-shadow: 0px 4px 12px #080001;
+}
+
+.score-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+
+  margin: min(7vw, 48px) 0;
+}
+
+.name {
+  font-size: max(4vw, 24px);
+  line-height: 0;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 2px 4px #080001;
+}
+
+.score-column {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.score {
+  width: max(16vw, 120px);
+  height: max(14vw, 93px);
+  display: flex;
+
+  background-color: #080001;
+  border: 2px solid red;
+  border-radius: 5px;
+
+  justify-content: center;
+  text-align: center;
+
+  margin-bottom: 2vw;
+}
+
+.score:hover {
+  box-shadow: 2px 2px 50px red;
+}
+
+.score-value {
+  font-family: "Digital";
+  font-size: max(9vw, 64px);
+  line-height: 0;
+  color: red;
+}
+
+.add-point-btn {
+  width: max(4vw, 36px);
+  height: max(4vw, 36px);
+
+  border: 2px solid #9aabd8;
+  border-radius: 5px;
+
+  background-color: #1b244a;
+  color: #9aabd8;
+
+  font-family: "Digital";
+  font-size: max(2vw, 24px);
+
+  cursor: pointer;
+}
+
+.add-point-btn:hover {
+  border: 2px solid #eeeeee;
+  color: #eeeeee;
+
+  box-shadow: 0.5px 0.5px 50px #1b244a;
+}
+
+.add-points {
+  display: flex;
+  justify-content: space-between;
+  width: max(14vw, 120px);
+}
+
+.action-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#reset-btn {
+  padding: 0 max(5vw, 25px);
+  height: max(6vw, 50px);
+
+  border-radius: 5px;
+  border: 0;
+
+  font-family: "Digital";
+  font-size: max(2vw, 24px);
+  line-height: 0;
+  text-align: center;
+
+  color: #1b244a;
+  opacity: 33%;
+
+  margin-bottom: 2vw;
+}
+
+#reset-btn:hover {
+  cursor: pointer;
+  color: #080001;
+  border: 2px solid #080001;
+
+  box-shadow: 2px 2px 75px #1b244a;
+}
+
+.actions {
+  display: flex;
+
+  justify-content: space-between;
+  width: max(14.75vw, 100px);
+}
+
+.action-img {
+  width: max(3vw, 24px);
+  height: auto;
+  max-width: 100%;
+}
+
+#undo-img {
+  transform: scaleX(-1);
+}
+
+.action-btn {
+  padding: 0 max(1.75vw, 10px);
+  height: max(6vw, 50px);
+
+  border-radius: 5px;
+  border: 2px solid #9aabd8;
+
+  background-color: #1b244a;
+
+  opacity: 33%;
+}
+
+.action-btn:hover {
+  border: 2px solid white;
+  cursor: pointer;
+
+  box-shadow: 1px 1px 20px #1b244a;
+}
